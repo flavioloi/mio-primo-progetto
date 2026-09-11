@@ -1,19 +1,151 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Il mio primo sito</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
+
 <body>
 
-	<h1>Il mio primo sito web 🚀</h1>
+    <header>
+        <nav>
+    <div class="logo">FLAVIO</div>
 
-	<p>Sto imparando a programmare!</p>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
 
-	<button>Cliccami</button>
+    <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chi-sono">Chi sono</a></li>
+                <li><a href="#competenze">Competenze</a></li>
+                <li><a href="#progetti">Progetti</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<script src="script.js"></script>
+    <main>
+
+        <section id="home" class="hero">
+            <p class="sottotitolo">BENVENUTO NEL MIO MONDO</p>
+
+            <h1>Ciao, sono <span>Flavio</span> 👋</h1>
+
+            <p>
+                Sto imparando a programmare e questo è il mio primo
+                progetto sviluppato con HTML, CSS e JavaScript.
+            </p>
+
+            <a href="#progetti" class="bottone">Scopri i miei progetti</a>
+        </section>
+
+
+        <section id="chi-sono">
+            <h2>Chi sono</h2>
+
+            <p>
+                Sono una persona curiosa e sto iniziando il mio percorso
+                nel mondo della programmazione e della tecnologia.
+            </p>
+        </section>
+
+
+        <section id="competenze">
+            <h2>Le mie competenze</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Struttura delle pagine web.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Grafica, layout e design.</p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Interattività e funzionalità.</p>
+                </div>
+            </div>
+        </section>
+
+
+       <section id="progetti">
+    <h2>I miei progetti</h2>
+
+    <div class="cards">
+
+        <div class="card progetto">
+            <h3>🚀 Il mio primo sito</h3>
+            <p>
+                Il mio primo sito web realizzato con HTML,
+                CSS e JavaScript.
+            </p>
+<a href="https://flavioloi.github.io/mio-primo-progetto/" 
+   class="progetto-link" 
+   target="_blank">
+    Visualizza progetto →
+</a>        </div>
+
+        <div class="card progetto">
+            <h3>🎨 Portfolio</h3>
+            <p>
+                Un portfolio personale moderno e responsive
+                per presentare le mie competenze.
+            </p>
+            <a href="#" class="progetto-link">Visualizza progetto →</a>
+        </div>
+
+        <div class="card progetto">
+            <h3>💻 Prossimo progetto</h3>
+            <p>
+                Questo spazio sarà dedicato al prossimo
+                progetto che svilupperò.
+            </p>
+            <a href="#" class="progetto-link">In arrivo →</a>
+        </div>
+
+    </div>
+<section id="contatti">
+    <h2>Contatti</h2>
+
+    <p>
+        Vuoi metterti in contatto con me?
+    </p>
+
+    <div class="contatti-box">
+
+        <a href="mailto:tuaemail@example.com" class="contatto-item">
+            📧 Email
+        </a>
+
+        <a href="https://github.com/flavioloi" 
+           target="_blank" 
+           class="contatto-item">
+            💻 GitHub
+        </a>
+
+        <a href="#" class="contatto-item">
+            📱 Instagram
+        </a>
+
+    </div>
+
+    <button id="contatto">Scrivimi</button>
+</section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Flavio — Il mio portfolio</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
